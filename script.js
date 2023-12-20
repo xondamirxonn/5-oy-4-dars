@@ -114,3 +114,73 @@
 // toshmat.greeting();
 // console.log(eshmat.greeting === toshmat.greeting);
 
+
+// ====================================================== Person
+function Person(ism, age, gender, married, location) {
+  this.ism = ism;
+  this.age = age;
+  this.gender = gender;
+  this.married = married;
+  this.location = location;
+}
+
+Person.prototype.fullInfo = function () {
+  console.log(`Ismi: ${this.ism}
+Yoshi: ${this.age}
+Jinsi: ${this.gender}
+Turmush: ${this.married}
+Manzil: ${this.location}`);
+};
+
+
+
+Person.prototype.changeName = function (name) {
+  this.ism = name;
+};
+
+Person.prototype.changeAge = function (age) {
+  this.age = age;
+};
+
+Person.prototype.changeMarried = function (haqida) {
+  this.married = haqida
+};
+
+let person = new Person(
+  "Toshmat",
+  28,
+  "male",
+  "Uylanmagan",
+  "Toshkent, Chilonzor"
+);
+
+person.fullInfo();
+
+
+function Fruit(name, rang, tami) {
+  this.name = name;
+  this.rang = rang;
+  this.tami = tami;
+}
+
+Fruit.prototype.fullInfo = function () {
+  console.log(`Nomi: ${this.name}
+Rangi: ${this.rang}
+Ta'mi: ${this.tami}`);
+};
+
+Fruit.prototype.changeName = function (name) {
+  this.fName = name;
+};
+
+Fruit.prototype.changeColor = function (rang) {
+  this.rang = this.rang;
+};
+
+Fruit.prototype.changeMazasi = function (info) {
+  this.tami = info;
+};
+
+let fruit = new Fruit("Olma", "qizil", "Shirin");
+ 
+fruit.fullInfo()
