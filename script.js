@@ -166,7 +166,7 @@ Ta'mi: ${this.tami}`);
 };
 
 Fruit.prototype.changeName = function (nomi) {
-  this.nomi = name;
+  this.nomi = nomi;
 };
 
 Fruit.prototype.changeColor = function (rang) {
