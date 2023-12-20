@@ -114,7 +114,6 @@
 // toshmat.greeting();
 // console.log(eshmat.greeting === toshmat.greeting);
 
-
 // ====================================================== Person
 function Person(ism, age, gender, married, location) {
   this.ism = ism;
@@ -132,8 +131,6 @@ Turmush: ${this.married}
 Manzil: ${this.location}`);
 };
 
-
-
 Person.prototype.changeName = function (name) {
   this.ism = name;
 };
@@ -143,7 +140,7 @@ Person.prototype.changeAge = function (age) {
 };
 
 Person.prototype.changeMarried = function (haqida) {
-  this.married = haqida
+  this.married = haqida;
 };
 
 let person = new Person(
@@ -156,31 +153,30 @@ let person = new Person(
 
 person.hammaMalumot();
 
-
-function Fruit(name, rang, tami) {
-  this.name = name;
+function Fruit(nomi, rang, tami) {
+  this.nomi = nomi;
   this.rang = rang;
   this.tami = tami;
 }
 
 Fruit.prototype.hammaMalumot = function () {
-  console.log(`Nomi: ${this.name}
+console.log(`Nomi: ${this.nomi}
 Rangi: ${this.rang}
 Ta'mi: ${this.tami}`);
 };
 
-Fruit.prototype.changeName = function (name) {
-  this.fName = name;
+Fruit.prototype.changeName = function (nomi) {
+  this.nomi = name;
 };
 
 Fruit.prototype.changeColor = function (rang) {
   this.rang = this.rang;
 };
 
-Fruit.prototype.changeMazasi = function (info) {
-  this.tami = info;
+Fruit.prototype.changeMazasi = function (haqida) {
+  this.tami = haqida;
 };
 
 let fruit = new Fruit("Nok", "sariq", "shirin");
- 
-fruit.hammaMalumot()
+
+fruit.hammaMalumot();
