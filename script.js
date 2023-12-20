@@ -124,7 +124,7 @@ function Person(ism, age, gender, married, location) {
   this.location = location;
 }
 
-Person.prototype.fullInfo = function () {
+Person.prototype.hammaMalumot = function () {
   console.log(`Ismi: ${this.ism}
 Yoshi: ${this.age}
 Jinsi: ${this.gender}
@@ -154,7 +154,7 @@ let person = new Person(
   "Toshkent, Chilonzor"
 );
 
-person.fullInfo();
+person.hammaMalumot();
 
 
 function Fruit(name, rang, tami) {
@@ -163,7 +163,7 @@ function Fruit(name, rang, tami) {
   this.tami = tami;
 }
 
-Fruit.prototype.fullInfo = function () {
+Fruit.prototype.hammaMalumot = function () {
   console.log(`Nomi: ${this.name}
 Rangi: ${this.rang}
 Ta'mi: ${this.tami}`);
@@ -181,6 +181,6 @@ Fruit.prototype.changeMazasi = function (info) {
   this.tami = info;
 };
 
-let fruit = new Fruit("Olma", "qizil", "Shirin");
+let fruit = new Fruit("Nok", "sariq", "shirin");
  
-fruit.fullInfo()
+fruit.hammaMalumot()
